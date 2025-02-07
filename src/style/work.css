@@ -1,0 +1,103 @@
+.workBox {
+    position: relative;
+    top: 5vh;
+    margin-top: 10vh;
+    display: flex;
+}
+
+.workheading {
+    font-size: 5rem;
+    padding-left: 10vw;
+}
+
+.detailsWork {
+    text-align: center;
+    margin: 5vh 0 0 15%;
+    
+}
+
+.animationBox {
+    display: flex;
+    padding-left: 10vw;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.video {
+    width: 80%;
+}
+
+.bottomSection{
+    margin-top: 5vh;
+}
+
+.rightArrow {
+    width: 16%;
+    height: 55%;
+    top: 28%;
+    background: none;
+}
+
+
+
+
+@media (max-width:1000px) {
+    .rightArrow {
+        width: 10%;
+        height: 30%;
+        top: 40%;
+    }
+}
+
+
+
+
+@media (max-width:868px) {
+    .rightArrow {
+        top: 35%;
+        width: 10%;
+        height: 25%;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .workBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0vh;
+    }
+
+    .detailsWork {
+        text-align: center;
+        padding: 0 52px 0 0;
+    }
+
+   .video{
+    width: 40%;
+    padding-left: 5em;
+   }
+
+   .rightArrow {
+    top: 70%;
+    width: 15%;
+    height: 18%;
+}
+}
+
+
+@media (max-width:400px) {
+    .workheading {
+        font-size: 3rem;
+    }
+    .video{
+        width: 70%;
+    }
+    .rightArrow {
+        top: 73%;
+        left: 20%;
+        width: 52px;
+        height: 63px;
+    }
+}

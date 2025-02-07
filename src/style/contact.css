@@ -1,0 +1,60 @@
+.contactBox {
+    position: relative;
+    top: 40vh;
+}
+
+.headingContact {
+    text-align: center;
+}
+
+.emailId {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.phonenumber {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.imgContact {
+    width: 25vw;
+    height: 57vh;
+    background: none;
+    padding-left: 10vw;
+    margin-top: 20vw;
+}
+
+
+.conatctDetails {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    text-align: center;
+    justify-content: center;
+}
+.conatctDetails > a {
+     text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+
+
+
+@media (max-width:768px) {
+
+    .emailId {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+
+

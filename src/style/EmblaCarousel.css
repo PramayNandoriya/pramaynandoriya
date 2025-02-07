@@ -1,0 +1,51 @@
+.box {
+  background: transparent;
+}
+
+.skills {
+  color: white;
+  margin: 10vh 0;
+}
+
+
+.marquee{
+  background: transparent;
+}
+
+
+.slideTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+
+}
+
+.marquee img {
+  background: none;
+  position: relative;
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll-left 10s linear infinite;
+  padding-left: 2vw;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+@media (max-width:768px){
+  .marquee img{
+    width: 10%;
+  }
+}
