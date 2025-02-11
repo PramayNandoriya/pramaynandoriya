@@ -15,21 +15,17 @@ import docker from "../Assets/docker.png";
 import azure from "../Assets/azure.png";
 
 const EmblaCarousel = () => {
-  const images = [html, css, js, react, redux,node,mongo,mysql,express,gsap,python,docker,azure];
+  const images = [html, css, js, react, redux, node, mongo, mysql, express, gsap, python, docker, azure];
 
   return (
-   
+
     <div className='box'>
       <h1 className="skills">My Skills</h1>
-      <div className="marquee">
-        <div className="slideTrack">
-          {images.map((img, index) => (
-            <img key={index} src={img} alt={`slide-${index}`} />
-          ))}
-          
-        </div>
+      <div className='skillsImg'>
+        {images.map((img, index) => (
+          <img key={index} src={img} alt={`slide-${index}`} />
+        ))}
       </div>
-
     </div>
   );
 };

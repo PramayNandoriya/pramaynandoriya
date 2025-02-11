@@ -27,7 +27,7 @@ const Header = () => {
         <div className={`headerBox ${scrolled ? "scrolled" : ""}`}>
             <h1>Pramay Nandoriya . _</h1>
 
-            {/* Desktop Navigation */}
+  
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li onClick={() => scrollToSection("home")}>// Home</li>
                 <li onClick={() => scrollToSection("expertise")}>// Expertise</li>
@@ -37,7 +37,6 @@ const Header = () => {
                 <li onClick={() => scrollToSection("contact")}>// Contact</li>
             </ul>
 
-            {/* Hamburger Menu Button (Only visible on mobile) */}
             <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
                 {menuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>

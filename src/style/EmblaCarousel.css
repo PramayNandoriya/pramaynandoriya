@@ -4,14 +4,8 @@
 
 .skills {
   color: white;
-  margin: 10vh 0;
+  margin: 10vh 0 5vh 0;
 }
-
-
-.marquee{
-  background: transparent;
-}
-
 
 .slideTrack {
   display: flex;
@@ -21,31 +15,30 @@
 
 }
 
-.marquee img {
+.skillsImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 75vw;
+  background: transparent;
+  gap: 25px;
+}
+
+.skillsImg>img {
   background: none;
   position: relative;
   width: 5%;
   height: 100%;
-  text-align: center;
-  transform: translateX(100%);
-  animation: scroll-left 10s linear infinite;
-  padding-left: 2vw;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 
+@media (max-width:768px) {
+  .skillsImg {
+    flex-wrap: wrap;
 
-@media (max-width:768px){
-  .marquee img{
-    width: 10%;
+  }
+
+  .skillsImg>img {
+    width: 12%;
   }
 }

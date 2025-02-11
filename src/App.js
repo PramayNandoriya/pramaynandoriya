@@ -7,6 +7,9 @@ import Education from './component/education';
 import Work from './component/work';
 import Experience from './component/Experience';
 import Contact from './component/contact';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Projects from './component/projects';
+
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,7 +41,10 @@ const App = () => {
           Loading...
         </div>
       ) : (
-        <>
+        <Router>
+          <Routes>
+            <Route path="/projects" element={<Projects />} />
+          </Routes>          
           <Header />
           <Loadingpage />
           <Expertise />
@@ -46,7 +52,7 @@ const App = () => {
           <Work />
           <Experience />
           <Contact />
-        </>
+        </Router>
       )}
     </>
   );
