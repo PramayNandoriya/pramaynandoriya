@@ -13,9 +13,11 @@ import node from "../Assets/node.png";
 import mysql from "../Assets/mysql.png";
 import docker from "../Assets/docker.png";
 import azure from "../Assets/azure.png";
+import git from "../Assets/git.png"
+
 
 const EmblaCarousel = () => {
-  const images = [html, css, js, react, redux, node, mongo, mysql, express, gsap, python, docker, azure];
+  const images = [html, css, js, react, redux, node, mongo, mysql, express,git, gsap, python, docker, azure];
 
   return (
 
