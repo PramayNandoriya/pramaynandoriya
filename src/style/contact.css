@@ -1,6 +1,6 @@
 .contactBox {
     position: relative;
-    top: 40vh;
+    padding: 20vh 0 10vh 0;
 }
 
 .headingContact {
@@ -29,11 +29,13 @@
 
 .conatctDetails {
     height: 30vh;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 58px;
     text-align: center;
     justify-content: center;
+    font-size: 1.2rem;
 }
 .conatctDetails > a {
      text-decoration: none;

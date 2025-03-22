@@ -41,10 +41,7 @@ const App = () => {
           Loading...
         </div>
       ) : (
-        <Router>
-          <Routes>
-            <Route path="/projects" element={<Projects />} />
-          </Routes>          
+        <>       
           <Header />
           <Loadingpage />
           <Expertise />
@@ -52,7 +49,7 @@ const App = () => {
           <Work />
           <Experience />
           <Contact />
-        </Router>
+        </>
       )}
     </>
   );

@@ -1,12 +1,14 @@
 import React from 'react';
 import "../style/projects.css";
 import { Carousel } from "antd";
+import { height } from '@mui/system';
 
 const contentStyle = {
     margin: 0,
     color: "#fff",
     textAlign: "center",
-    letterSpacing : "5px"
+    letterSpacing : "5px",
+    marginTop : "8vh"
 
 };
 
@@ -18,6 +20,7 @@ const carouselBox = {
 
 const contentDetails = {
     width: "60vw",
+    height : "25vh",
     marginTop: "5vh",
     textAlign: "center",
 }
