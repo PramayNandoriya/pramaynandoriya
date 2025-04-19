@@ -7,8 +7,11 @@ import Education from './component/education';
 import Work from './component/work';
 import Experience from './component/Experience';
 import Contact from './component/contact';
+import { ToastContainer } from 'react-toastify';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from './component/projects';
+import Myskills from './component/Myskills';
+import EmblaCarousel from './component/EmblaCarousel';
 
 
 const App = () => {
@@ -44,11 +47,14 @@ const App = () => {
         <>       
           <Header />
           <Loadingpage />
+          {/* <Myskills/> */}
+          <EmblaCarousel/>
+          <Contact />
+          <Work />
           <Expertise />
           <Education />
-          <Work />
           <Experience />
-          <Contact />
+          <ToastContainer />
         </>
       )}
     </>

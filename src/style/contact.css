@@ -1,62 +1,102 @@
-.contactBox {
-    position: relative;
-    padding: 20vh 0 10vh 0;
+.contact-container {
+  margin: 15vh 0 0vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
 }
 
-.headingContact {
-    text-align: center;
-}
-
-.emailId {
-    margin-top: 10vh;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.phonenumber {
-    text-align: center;
-    font-size: 1rem;
-}
-
-.imgContact {
-    width: 25vw;
-    height: 57vh;
-    background: none;
-    padding-left: 10vw;
-    margin-top: 20vw;
-}
-
-
-.conatctDetails {
-    height: 30vh;
-    margin-top: 50px;
-    display: flex;
+@media (max-width: 768px) {
+  .contact-container {
     flex-direction: column;
-    gap: 58px;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.2rem;
-}
-.conatctDetails > a {
-     text-decoration: none;
+    gap: 5vh;
+    width: 100vw !important;
+  }
 }
 
-a:hover {
-    color: aquamarine;
+.contact-left{
+  text-align: center;
 }
 
-
-
-
-@media (max-width:768px) {
-
-    .emailId {
-        font-size: 1.3rem;
-    }
-
-
+.socialLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 5vh;
 }
 
 
+.socialLinks >a:hover {
+  color: aquamarine;
+}
 
+.contact-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  margin: 0 0 8vh 0;
+}
 
+.contact-left p {
+  margin: 10px 0;
+}
+
+.contact-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  /* padding: 15px; */
+}
+
+@media (max-width: 468px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.form-row input {
+  flex: 1;
+}
+
+input,
+textarea {
+  background-color: #0A0A0A;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  height: 50px;
+  resize: none;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ccc;
+}

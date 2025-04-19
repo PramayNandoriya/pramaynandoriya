@@ -22,7 +22,7 @@ const Loadingpage = () => {
                     speed={50}
                 />
              
-                <EmblaCarousel />
+                {/* <EmblaCarousel /> */}
             </div>
         </div>
     );

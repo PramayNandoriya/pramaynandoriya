@@ -1,24 +1,73 @@
 import React from 'react';
 import "../style/contact.css";
-import contact from "../Assets/contact.svg"
+import { toast } from 'react-toastify';
 
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "ea11520d-b800-465c-9d76-dcc49b625288");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            toast.success("Form Submitted Successfully")
+            setResult("");
+            event.target.reset();
+        } else {
+            toast.error(data.message)
+            console.log("Error", data);
+            setResult("");
+        }
+    };
+
     return (
-        <div className='contactBox' id='contact'>
-            <h2 className='headingContact'> Contact Me</h2>
-            <p className='emailId'>¬ pramay2822n@gmail.com </p>
-            <p className='phonenumber'>   <br /> +44 7771053606 (U.k Enqiries) <br /> +91 7211119498(Whatsapp only)
-            </p>
-            <div className='conatctDetails'>
+        <>
+            <form className="contact-container" id='contact' onSubmit={onSubmit}>
+                {/* Left Side */}
+                <div className="contact-left">
+                    <h1 className="contact-title">Contact Me</h1>
+                    <p>My Name is Pramay Nandoriya </p>
 
-                <a href="https://github.com/PramayNandoriya">¬ GitHub</a>
-                <a href="https://www.linkedin.com/in/pramay-nandoriya-ba429122b/">¬ Linkdin</a>
-                <a href="https://www.instagram.com/i_m_pramay___/">¬ Instagram</a>
-                
-            </div>
-        
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:pramay2822n@gmail.com">pramay2822n@gmail.com</a>
+                    </p>
+                    <p>
+                        <strong>Phone:</strong> +44 7771053606
+                    </p>
+                    <div className='socialLinks'>
+                        <a href="https://github.com/PramayNandoriya">¬ GitHub</a>
+                        <a href="https://www.linkedin.com/in/pramay-nandoriya-ba429122b/">¬ Linkdin</a>
+                        <a href="https://www.instagram.com/i_m_pramay___/">¬ Instagram</a>
+                    </div>
+                </div>
 
-        </div>
+                {/* Right Side */}
+                <div className="contact-right">
+                    <div className="form-row">
+                        <input type="text" name="first_name" placeholder="First Name *" required />
+                        <input type="text" name="last_name" placeholder="Last Name *" required />
+                    </div>
+                    <div className="form-row">
+                        <input type="email" name="email" placeholder="Email *" required />
+                        <input type="tel" name="phone" placeholder="Phone" />
+                    </div>
+                    <textarea name="message" placeholder="Leave us a message..." required></textarea>
+                    <button type="submit">Submit</button>
+                    <p>{result}</p>
+                </div>
+            </form>
+        </>
 
     );
 }

@@ -73,7 +73,7 @@ h1:hover {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu-btn {
         display: block;
     }
@@ -98,6 +98,13 @@ h1:hover {
         text-align: center;
     }
     h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width:767px){
+    h1{
+        font-size: 1.3rem;
     }
 }

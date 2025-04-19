@@ -30,11 +30,12 @@ const Header = () => {
   
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li onClick={() => scrollToSection("home")}>// Home</li>
+                <li onClick={() => scrollToSection("contact")}>// Contact</li>
+                <li onClick={() => scrollToSection("work")}>// Projects</li>
                 <li onClick={() => scrollToSection("expertise")}>// Expertise</li>
                 <li onClick={() => scrollToSection("education")}>// My Education</li>
-                <li onClick={() => scrollToSection("work")}>// Work</li>
                 <li onClick={() => scrollToSection("experience")}>// Experience</li>
-                <li onClick={() => scrollToSection("contact")}>// Contact</li>
+              
             </ul>
 
             <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
