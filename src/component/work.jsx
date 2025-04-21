@@ -1,7 +1,6 @@
 import React from 'react';
 import "../style/work.css"
 import video from "../Assets/video.webm"
-import Projects from './projects';
 import cv from "../Assets/pramay.pdf"
 import ProjectAndCerti from './ProjectAndCerti';
 
@@ -25,7 +24,6 @@ const Work = () => {
                 </div>
             </div>
             <div className='projects'>
-                {/* <Projects /> */}
                 <ProjectAndCerti/>
             </div>
 

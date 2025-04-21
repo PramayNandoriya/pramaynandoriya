@@ -17,7 +17,7 @@ const EmblaCarousel = () => {
           {
             data.map((item) => (
               <div className='eachSkill' key={item.id}>
-                <img className='imgOfskill' src={item.img} />{item.p}
+                <img className='imgOfskill' src={item.img} alt='' />{item.p}
               </div>
             ))
           }

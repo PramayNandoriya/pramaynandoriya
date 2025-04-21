@@ -2,9 +2,6 @@ import React from 'react';
 import "../style/loadingpage.css";
 import bg from "../Assets/bg.jpg";
 import { TypeAnimation } from 'react-type-animation';
-import EmblaCarousel from './EmblaCarousel';
-
-
 
 const Loadingpage = () => {
     return (
