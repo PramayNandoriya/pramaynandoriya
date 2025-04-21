@@ -70,6 +70,7 @@ h1:hover {
     border: none;
     cursor: pointer;
     color: aquamarine;
+    margin-top: 0 !important;
 }
 
 /* Mobile Styles */

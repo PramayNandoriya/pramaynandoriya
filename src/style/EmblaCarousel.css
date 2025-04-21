@@ -1,51 +1,3 @@
-/* .box {
-  background: transparent;
-  filter: blur(5px);
-  width: 50vw;
-  background-color: antiquewhite;
-}
-
-.skills {
-  color: white;
-  margin: 10vh 0 5vh 0;
-}
-
-.slideTrack {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent !important;
-
-}
-
-.skillsImg {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 75vw;
-  background: transparent;
-  gap: 25px;
-}
-
-.skillsImg>img {
-  background: none;
-  position: relative;
-  width: 5%;
-  height: 100%;
-}
-
-
-@media (max-width:768px) {
-  .skillsImg {
-    flex-wrap: wrap;
-
-  }
-
-  .skillsImg>img {
-    width: 12%;
-  }
-} */
-
 .skillBox{
   display: flex;
   align-items: center;
@@ -53,11 +5,8 @@
 }
 
 .skillWrapper{
-  /* background-color: aqua; */
   width: 80%;
 }
-
-
 
 .skillTitle {
   color: white;
@@ -67,7 +16,6 @@
   margin-top: 10vh;
   font-family: math;
 }
-
 
 .skillConatiner {
   display: grid;
@@ -111,12 +59,17 @@
   padding: 15px;
   border-radius: 8px;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 10px;
 }
+
+.eachSkill:hover{
+  box-shadow: rgba(255, 255, 255, 0.50) 0px 0px 10.09428px 0px;
+  ;
+}
+
 .imgOfskill {
   position: relative;
   width: 50px;

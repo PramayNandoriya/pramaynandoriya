@@ -36,10 +36,10 @@ const Contact = () => {
             <form className="contact-container" id='contact' onSubmit={onSubmit}>
                 {/* Left Side */}
                 <div className="contact-left">
-                    <h1 className="contact-title">Contact Me</h1>
-                    <p>My Name is Pramay Nandoriya </p>
-
-                    <p>
+                    <h1 className="contact-title">About Me.</h1>
+                    <p>Hi, I'm Pramay Nandoriya, a passionate Front-End Developer specializing in React.js with over 1 year of hands-on experience. I hold a Bachelor’s degree in Computer Science and am currently pursuing my Master’s in Computer Science to deepen my knowledge and stay ahead in the tech world. </p>
+                    <p>I enjoy building clean, responsive, and user-friendly web interfaces. I’ve worked with a few companies and contributed to several projects, which you can explore in the Projects section.</p>
+                 <p>
                         <strong>Email:</strong> <a href="mailto:pramay2822n@gmail.com">pramay2822n@gmail.com</a>
                     </p>
                     <p>
@@ -54,6 +54,7 @@ const Contact = () => {
 
                 {/* Right Side */}
                 <div className="contact-right">
+                <h1 className="contact-title">Contact Me</h1>
                     <div className="form-row">
                         <input type="text" name="first_name" placeholder="First Name *" required />
                         <input type="text" name="last_name" placeholder="Last Name *" required />
@@ -63,7 +64,7 @@ const Contact = () => {
                         <input type="tel" name="phone" placeholder="Phone" />
                     </div>
                     <textarea name="message" placeholder="Leave us a message..." required></textarea>
-                    <button type="submit">Submit</button>
+                    <button  className="submitBtn" type="submit">Submit</button>
                     <p>{result}</p>
                 </div>
             </form>

@@ -21,14 +21,8 @@ const EmblaCarousel = () => {
               </div>
             ))
           }
-
-
-
         </div>
-
       </div>
-
-
     </div>
   );
 };

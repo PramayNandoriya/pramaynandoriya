@@ -37,6 +37,25 @@ const Experience = () => {
             <h2>My Experience</h2>
 
             <div className="containerExp">
+
+                <Accordion sx={{ background: "#0A0A0A", width: "70%", border: "1px solid rgba(255, 255, 255, 0.3)" }}>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2-content" id="panel2-header">
+                        <Typography component="span">Bronzer Intrio</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails sx={{ textAlign: "start" }}>
+                        <p style={{ textAlign: "center" }}> ¬ Frontend Developer </p><br />
+                        ¬ Check it out here 👉 <>bronzerinterio.com</> <br /><br />
+                        This was my freelancing project and this is a beautifully crafted website that showcases elegant and modern interior design solutions.
+                        This project demonstrates my expertise in front-end development(React.js) and interactive web experiences. <br /><br /><br />
+                        Key Features:<br /><br /><br />
+                        ~ Stunning Visual Design – Aesthetic and sleek UI for an immersive browsing experience.<br />
+                        ~ Smooth Animations & Transitions – Powered by GSAP & Framer Motion for engaging interactions.<br />
+                        ~ Responsive & Mobile-Friendly – Optimized for all devices, ensuring seamless usability.<br />
+                        ~ Showcase of Interior Design Projects – High-quality images and detailed descriptions of completed projects.<br />
+                        ~ Contact & Inquiry Forms – Easy-to-use forms for client engagement.<br />
+                        ~ Performance Optimized – Fast-loading and SEO-friendly design for a superior user experience.<br />
+                    </AccordionDetails>
+                </Accordion>
                 <Accordion
                     defaultExpanded
                     sx={{ background: "#0A0A0A", width: "70%", border: "1px solid rgba(255, 255, 255, 0.3)" }}
@@ -61,8 +80,11 @@ const Experience = () => {
                     <AccordionDetails>
                         ¬ Warehouse Operative<br />
                         ¬ From 09/09/24 To 04/01/25 <br /><br />
-                        I worked as a warehouse operative at Amazon Logistics, with duties including stowing, picking,
-                        stock management, and problem-solving.
+                        Knowledgeable in conducting inductions, picking,
+                        loading and unloading, packing, storing, and
+                        addressing operational problems. committed to
+                        making sure that warehouse operations run smoothly,accurately, and efficiently in order to fulfil deadlines and
+                        sustain high levels of production.
                     </AccordionDetails>
                 </Accordion>
             </div>

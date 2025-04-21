@@ -8,9 +8,6 @@ import Work from './component/work';
 import Experience from './component/Experience';
 import Contact from './component/contact';
 import { ToastContainer } from 'react-toastify';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Projects from './component/projects';
-import Myskills from './component/Myskills';
 import EmblaCarousel from './component/EmblaCarousel';
 
 
@@ -18,20 +15,16 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Define a function to handle the window load event.
     const handleLoad = () => {
       setIsLoading(false);
     };
 
-    // Listen for the window's load event.
     window.addEventListener("load", handleLoad);
 
-    // If the document is already fully loaded, update the state immediately.
     if (document.readyState === "complete") {
       setIsLoading(false);
     }
 
-    // Cleanup the event listener on unmount.
     return () => {
       window.removeEventListener("load", handleLoad);
     };
@@ -44,11 +37,10 @@ const App = () => {
           Loading...
         </div>
       ) : (
-        <>       
+        <>
           <Header />
           <Loadingpage />
-          {/* <Myskills/> */}
-          <EmblaCarousel/>
+          <EmblaCarousel />
           <Contact />
           <Work />
           <Expertise />

@@ -1,9 +1,6 @@
 .contact-container {
-  margin: 15vh 0 0vh 0;
+  padding: 25vh 0 0vh 0;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
   width: 100%;
 }
 
@@ -12,27 +9,39 @@
     flex-direction: column;
     gap: 5vh;
     width: 100vw !important;
+    align-items: center;
   }
+  .contact-left p {
+    width: 130% !important;
+  }
+
 }
 
-.contact-left{
-  text-align: center;
-}
-
-.socialLinks{
+.contact-left {
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+}
+
+
+
+.socialLinks {
+  display: flex;
+  /* flex-direction: column; */
   gap: 15px;
   margin-top: 5vh;
 }
 
 
-.socialLinks >a:hover {
+.socialLinks>a:hover {
   color: aquamarine;
 }
 
 .contact-title {
-  font-size: 48px;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: white;
@@ -41,8 +50,17 @@
 
 .contact-left p {
   margin: 10px 0;
+  text-align: justify;
+  line-height: 28px;
+  width: 80%;
 }
+@media (max-width: 900px) {
 
+  .contact-left p {
+    width: 80% !important;
+  }
+
+}
 .contact-left a {
   color: white;
   text-decoration: none;
@@ -51,18 +69,23 @@
 .contact-right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .form-row {
   display: flex;
   gap: 30px;
+  margin-bottom: 30px;
   /* padding: 15px; */
 }
 
 @media (max-width: 468px) {
   .form-row {
     flex-direction: column;
+  }
+
+  .contact-left p {
+    width: 130% !important;
   }
 }
 
@@ -86,7 +109,7 @@ textarea {
   resize: none;
 }
 
-button {
+.submitBtn {
   background-color: white;
   color: black;
   padding: 10px 30px;
@@ -95,8 +118,9 @@ button {
   cursor: pointer;
   width: fit-content;
   transition: background-color 0.3s;
+  margin-top: 5vh;
 }
 
-button:hover {
+.submitBtn:hover {
   background-color: #ccc;
 }

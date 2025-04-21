@@ -1,7 +1,6 @@
 import React from 'react';
 import "../style/projects.css";
 import { Carousel } from "antd";
-import { height } from '@mui/system';
 
 const contentStyle = {
     margin: 0,
@@ -78,3 +77,11 @@ const Projects = () => {
 }
 
 export default Projects;
+
+
+
+
+
+
+
+

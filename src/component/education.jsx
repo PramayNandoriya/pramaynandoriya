@@ -56,6 +56,21 @@ const Education = () => {
         <div className="eduBox" ref={eduRef} id="education">
             <h2>My Education</h2>
             <div className="stepper">
+            <div className="step" ref={(el) => (stepsRef.current[1] = el)}>
+                    <div className="circleTwo">2</div>
+                    <div className="content">
+                        <div className="label">MSc Computer Science And Technology</div>
+                        <div className="details">
+                            I completed MSc in Computer Science and Technology at Ulster University's campus in Birmingham in 2024–2025. 
+                            Studying databases like MongoDB, CosmosDB, SQL, and NoSQL, as well as MS Azure, big data, machine learning, 
+                            and data science, was very beneficial to my career.
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div className="line"></div>
+
                 <div className="step" ref={(el) => (stepsRef.current[0] = el)}>
                     <div className="circle">1</div>
                     <div className="content">
@@ -65,20 +80,6 @@ const Education = () => {
                             the fundamentals of web development, DSA, algorithms, databases, and user interface development. At the end of the 
                             program, I created a master's project and seminar, and my project was a Spotify clone. I used PHP and MySQL for the 
                             backend and HTML, CSS, and JS for the front end.
-                        </div>
-                    </div>
-                </div>
-
-                <div className="line"></div>
-
-                <div className="step" ref={(el) => (stepsRef.current[1] = el)}>
-                    <div className="circleTwo">2</div>
-                    <div className="content">
-                        <div className="label">MSc Computer Science And Technology</div>
-                        <div className="details">
-                            I completed an MSc in Computer Science and Technology at Ulster University's campus in Birmingham in 2024–2025. 
-                            Studying databases like MongoDB, CosmosDB, SQL, and NoSQL, as well as MS Azure, big data, machine learning, 
-                            and data science, was very beneficial to my career.
                         </div>
                     </div>
                 </div>
