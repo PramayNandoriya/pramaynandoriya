@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: center; 
     position: relative; /* Allow positioning of child elements */
+    /* top: 8rem; */
 }
 .hero-social{
     display: flex;
@@ -28,7 +29,9 @@
     text-align: center; 
     justify-content: center;
     flex-direction: column;
-    position: relative; /* Allow positioning of child elements */
+    position: relative; 
+    top: 7rem;
+    /* Allow positioning of child elements */
 }
 
 .hero-content img{
@@ -243,7 +246,7 @@
         gap: 50px;
     }
     .hero-social-right{
-        margin-right: 0;
+        margin-top: 7rem;
         padding: 20px;
     }
 }

@@ -3,16 +3,21 @@ html {
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 40px;
-  gap: 60px;
-  position: sticky;
+  position: fixed;
+  /* stays always on top */
   top: 0;
-  background: #161513;
-  z-index: 100;
-  transition: 0.3s;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  /* above other elements */
+  background-color: #161513;
+  /* optional transparency */
+  /* backdrop-filter: blur(8px); */
+  /* blur effect if you want */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
 
 }
 
@@ -98,9 +103,7 @@ html {
 }
 
 @media(max-width: 768px) {
-  .navbar {
-    margin: 20px 20px !important;
-  }
+
 
   .nav-mob-open {
     display: block;
@@ -113,8 +116,8 @@ html {
   .nav-mob-close {
     display: block;
     position: relative;
-    top: 30px;
-    left: 120px;
+    top: 29px;
+    left: 239px;
     width: 30px;
   }
 
@@ -130,6 +133,8 @@ html {
     z-index: 2;
     transition: right 0.5s ease;
     right: -300px;
+    align-items: baseline;
+
   }
 
   .nav-menu li {

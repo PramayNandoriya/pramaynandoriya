@@ -2,78 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 html {
     scroll-behavior: smooth !important;
-  }
-  
-body{
+    scroll-margin-top: 8rem !important;
+    /* equal to navbar height */
+
+}
+
+body {
     height: 100vh;
     background: #161513;
     color: #fff;
     font-family: 'outfit', sans-serif, 'Arial', 'Helvetica', 'Cairo';
-    transition: all 0.4s ease; /* Add smooth transition */
+    transition: all 0.4s ease;
+    /* Add smooth transition */
 }
-.light-mode{
+
+.light-mode {
     background: #F0F0F0;
     color: #000 !important;
 }
-body.light-mode p, body.light-mode h1, body.light-mode h2, body.light-mode h3, body.light-mode h4, body.light-mode h5, body.light-mode h6{
+
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
     color: #000 !important;
 }
-body.light-mode .home-social-icon{
-    color:#000 !important;
+
+body.light-mode .home-social-icon {
+    color: #000 !important;
 }
-body.light-mode .hero-connect{
+
+body.light-mode .hero-connect {
     border: 2px solid #000000;
 }
-body.light-mode .hero-connect a{
+
+body.light-mode .hero-connect a {
     text-decoration: none;
     color: #000000;
 }
-body.light-mode .hero-connect:hover{ 
+
+body.light-mode .hero-connect:hover {
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body.light-mode .qualification-round{
+
+body.light-mode .qualification-round {
     background-color: #000 !important;
 }
-body.light-mode .qualification-line{
-    background-color: #000 !important;}
-body.light-mode .hero-content img {
-    box-shadow: 0 0 0 9px rgba(160, 160, 160, 0.5); /* Soft Gray for light mode */
+
+body.light-mode .qualification-line {
+    background-color: #000 !important;
 }
-body.light-mode .description{
+
+body.light-mode .hero-content img {
+    box-shadow: 0 0 0 9px rgba(160, 160, 160, 0.5);
+    /* Soft Gray for light mode */
+}
+
+body.light-mode .description {
     color: white !important;
 }
-body.light-mode .tech-stack{
+
+body.light-mode .tech-stack {
     color: #ff00ff !important;
 }
-body.light-mode .mywork-showmore, body.light-mode .mywork-showless{
+
+body.light-mode .mywork-showmore,
+body.light-mode .mywork-showless {
     border: 2px solid #000000;
 }
-body.light-mode .mail-icon, body.light-mode .call-icon, body.light-mode .location-icon{
+
+body.light-mode .mail-icon,
+body.light-mode .call-icon,
+body.light-mode .location-icon {
     color: #000000;
 }
-body.light-mode .contact-right label{
+
+body.light-mode .contact-right label {
     color: #000000;
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     body.light-mode .nav-menu li p {
         text-decoration: none;
         color: white !important;
         padding: 5px 0;
         font-size: 18px;
+    }
 }
-}
+
 @layer base {
-  :root {
+    :root {
         --background: 0 0% 100%;
         --foreground: 222.2 84% 4.9%;
         --card: 0 0% 100%;
@@ -100,7 +131,8 @@ body.light-mode .contact-right label{
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
     }
-  .dark {
+
+    .dark {
         --background: 222.2 84% 4.9%;
         --foreground: 210 40% 98%;
         --card: 222.2 84% 4.9%;
@@ -127,11 +159,13 @@ body.light-mode .contact-right label{
         --chart-5: 340 75% 55%;
     }
 }
+
 @layer base {
-  * {
-    @apply border-border;
+    * {
+        @apply border-border;
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
     }
 }
