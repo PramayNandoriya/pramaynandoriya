@@ -64,7 +64,7 @@ const About = () => {
               ✨ I've worked on multiple production projects for companies and freelance clients, focusing on
               performance optimisation, responsive design, and interactive user experiences.
             </p>
-            <IconCloud iconSlugs={slugs} />
+            <IconCloud className="" iconSlugs={slugs} />
           </div>
         </div>
       </div>

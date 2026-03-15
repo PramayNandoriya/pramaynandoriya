@@ -90,7 +90,7 @@ const Projects = () => {
       {/* Hero */}
       <div className="pj-hero pj-reveal">
         <div className="pj-eyebrow">
-          <span className="pj-edot" /> PORTFOLIO 2024 <span className="pj-edot" />
+          <span className="pj-edot" /> PORTFOLIO 2026 <span className="pj-edot" />
         </div>
         <h2 className="pj-title">
           Built<br />
