@@ -3,7 +3,7 @@ import Hero from "./Components/Hero/Hero"
 import MyWork from "./Components/MyWork/MyWork"
 import Navbar from "./Components/Navbar/Navbar"
 import Qualification from "./Components/Qualifications/Qualification"
-import Contact from "./Components/Contact/Contact"
+import Contact from "./Components/Contact/ContactMe"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import {Analytics} from '@vercel/analytics/react'
 
