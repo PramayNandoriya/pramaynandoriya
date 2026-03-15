@@ -9,8 +9,11 @@ export const cloudProps = {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      width: "100%",
-      paddingTop: 40,
+      // width: "500px",
+      // height : "500px",
+      paddingTop: 0,
+      background : "#fff",
+        borderRadius: "50%"
     },
   },
   options: {

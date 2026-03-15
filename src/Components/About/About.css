@@ -318,6 +318,54 @@
     }
 }
 
+/* Container */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; allow stacking on small screens */
+  gap: 2rem;
+  padding: 2rem;
+  /* width: max-content; */
+}
+
+/* Text content - bigger priority */
+.about-text {
+  flex: 2 1 600px; /* takes twice the space as icon cloud */
+  max-width: 700px;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  color: #f3f3f3;
+}
+
+/* Icon cloud - smaller */
+.icon-cloud-wrapper {
+  flex: 1 1 400px; /* smaller width, priority lower */
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* margin can be adjusted */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .icon-cloud-wrapper {
+    margin-top: 2rem;
+  }
+}
+
 /* ============================================================
    Skills Section
    ============================================================ */

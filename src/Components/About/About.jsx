@@ -54,18 +54,24 @@ const About = () => {
                 <p>Skills</p>
               </div>
             </div>
-            <p>
-              🚀 Front-End Developer | React.js | JavaScript | Building Fast &amp; Modern Web Applications
-              <br /><br />
-              ✨ I'm a React.js Front-End Developer with 1+ year of experience building responsive and
-              scalable web applications. I enjoy turning complex ideas into clean, user-friendly interfaces
-              with strong performance and modern UI.
-              <br /><br />
-              ✨ I've worked on multiple production projects for companies and freelance clients, focusing on
-              performance optimisation, responsive design, and interactive user experiences.
-            </p>
-            <IconCloud className="" iconSlugs={slugs} />
+            <div className="about-container">
+              <p className="about-text">
+                🚀 Front-End Developer | React.js | JavaScript | Building Fast & Modern Web Applications
+                <br /><br />
+                ✨ I'm a React.js Front-End Developer with 1+ year of experience building responsive and
+                scalable web applications. I enjoy turning complex ideas into clean, user-friendly interfaces
+                with strong performance and modern UI.
+                <br /><br />
+                ✨ I've worked on multiple production projects for companies and freelance clients, focusing on
+                performance optimisation, responsive design, and interactive user experiences.
+              </p>
+
+              <div className="icon-cloud-wrapper">
+                <IconCloud iconSlugs={slugs} />
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
 
