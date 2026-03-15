@@ -1,0 +1,215 @@
+.qualification-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 80px 170px;
+}
+.qualification-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.section-subtitle{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.qualification-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.qualification-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+   
+.section-subtitle{
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qualification-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.qualification-button{
+    display: flex;   
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.qualification-button:hover{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.qualification-container{
+    max-width: 768px;
+    margin-bottom: 20px;
+}
+.qualification-sections{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualification_title h3{
+    padding-bottom: 5px;
+}
+.qualification-subtitle{
+    display: inline-block;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.qualification-calendar{
+    display: flex;   
+    gap: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.qualification-content{
+    display: none;
+}
+.qualification__content-active{
+    display: block;
+}
+.qualification-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+.qualification-round{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+    margin-top: 10px;
+    object-fit: cover;
+    z-index: 1;
+}
+.qualification-round.uc-health {
+    background-image: url('../../assets/UC_Health.jpeg');
+}
+
+.qualification-round.uc-com {
+    background-image: url('../../assets/med.jpeg');
+}
+
+.qualification-round.cech {
+    background-image: url('../../assets/cech.png');
+}
+
+.qualification-round.orange-is-better {
+    background-image: url('../../assets/Orange.png');
+    background-size: 50px 50px;
+    background-position: center;
+}
+.qualification-round.honda {
+    background-image: url('../../assets/honda_grey.jpeg');
+    background-size: 50px 50px;
+    background-position: center;
+   
+}
+.qualification-round.fifth-third {
+    background-image: url('../../assets/fifth_third.png');
+    background-size: 50px 50px;
+    background-position: center;
+  }
+.qualification-line{
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: -55px;
+    z-index: -1;
+}
+@media (max-width: 1028px){
+    .qualification-section{
+        margin: 50px 70px;
+        gap: 40px;
+        /* align-items: start; */
+        
+    }
+    .qualification-title h1{
+        font-size: 80px;
+        padding: 0;
+      
+    }
+    .qualification-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .qualification-sections{
+        grid-template-columns: 1fr;
+    }
+    .qualification-buttons{
+        
+        gap: 20px;
+    }
+}
+@media(max-width: 768px){
+   .qualification-section{
+       margin: 50px 50px;
+       align-items: start; 
+   }
+    .qualification-title h1{
+         font-size: 50px;
+         padding: 0;
+    }
+    .qualification-title img{
+        width: 130px;
+        right: -20px;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .qualification-section{
+        margin: 50px 20px;
+        align-items: start;
+    }
+    .qualification-title h1{
+        font-size: 40px;
+        padding: 0;
+   }
+    .section-subtitle{
+         font-size: 24px;
+    }
+   .qualification-title img{
+       width: 100px;
+       right: -20px;
+   }
+}
+@media screen and (max-width: 320px){
+    .qualification-section{
+        margin: 50px 15px;
+        align-items: start;
+    }
+    .qualification-title h1{
+        font-size: 30px;
+    }
+    .section-subtitle{
+        font-size: 20px;
+    }
+    .qualification-title img{
+        width: 80px;
+        right: -20px;
+    }
+
+}
