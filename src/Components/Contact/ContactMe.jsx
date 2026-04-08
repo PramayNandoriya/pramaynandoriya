@@ -41,14 +41,14 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <FontAwesomeIcon className="mail-icon" icon={faEnvelope} />
-              <a href="mailto:teklemya@mail.uc.edu">
+              <a href="mailpramay2822n@gmail.com">
                 <p>pramay2822n@gmail.com</p>
               </a>
             </div>
             <div className="contact-detail">
               {/* <img src={call_icon} alt="Call" /> */}
               <FontAwesomeIcon className="call-icon" icon={faPhone} />
-              <a href="tel:+15135000630">
+              <a href="tel:+447771053606">
                 <p>+44 7771053606</p>
               </a>
             </div>
